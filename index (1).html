@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روابط عمر | Omar Links</title>
+    
+    <!-- تضمين خطوط جوجل (Cairo) لخط عربي جميل -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- تضمين مكتبة Tailwind CSS للتصميم -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- تضمين مكتبة FontAwesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- إعدادات إضافية للتصميم -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1a1a2e',
+                        secondary: '#16213e',
+                        accent: '#e94560'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            background-attachment: fixed;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .link-card {
+            transition: all 0.3s ease;
+        }
+        .link-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+        /* حركة بسيطة للوغو */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating-logo {
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        /* تأثيرات للألعاب */
+        .game-card {
+            background: linear-gradient(to bottom right, rgba(233, 69, 96, 0.1), rgba(0, 0, 0, 0.5));
+            border: 1px solid rgba(233, 69, 96, 0.3);
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen flex flex-col">
+
+    <!-- المحتوى الرئيسي -->
+    <main class="flex-grow flex flex-col items-center w-full max-w-md mx-auto pt-10 px-4 pb-8">
+        
+        <!-- مساحة إعلانية علوية (Ad Banner) -->
+        <div class="w-full bg-black/30 border border-gray-600 border-dashed rounded-lg p-3 text-center mb-6 shadow-inner flex flex-col justify-center items-center min-h-[60px]">
+            <span class="text-gray-400 text-xs mb-1">إعلان</span>
+            <!-- هنا يمكنك وضع كود إعلانات جوجل لاحقاً -->
+            <p class="text-gray-500 font-semibold text-sm">مساحة مخصصة للإعلانات (AdSense)</p>
+        </div>
+
+        <!-- اللوغو (تم تغييره لصورة الشخصية) -->
+        <div class="floating-logo relative mb-4">
+            <div class="w-28 h-28 rounded-full bg-gradient-to-tr from-accent to-purple-600 p-1 shadow-[0_0_20px_rgba(233,69,96,0.6)]">
+                <!-- تأكد من وضع صورتك بنفس المجلد وتسميتها logo.jpeg -->
+                <img src="logo.jpeg" alt="لوغو عمر" class="w-full h-full object-cover rounded-full bg-white" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Omar&background=e94560&color=fff&size=112'">
+            </div>
+            <!-- نقطة خضراء دلالة على الاتصال -->
+            <div class="absolute bottom-2 right-2 w-5 h-5 bg-green-500 rounded-full border-4 border-gray-900"></div>
+        </div>
+
+        <!-- نصوص الترحيب -->
+        <h1 class="text-3xl font-bold mb-1 tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
+            مرحباً بكم
+        </h1>
+        
+        <div class="glass-panel px-6 py-2 rounded-full mb-8 mt-2">
+            <p class="text-lg font-semibold text-accent">على وين؟</p>
+        </div>
+
+        <!-- قائمة الروابط الأساسية -->
+        <div class="w-full space-y-4 mb-8">
+            <!-- زر يوتيوب -->
+            <a href="https://youtube.com/@akhrzouzomar-lf1uh?si=CS2XKnKYDGXzstVG" target="_blank" rel="noopener noreferrer" 
+               class="link-card block w-full bg-gradient-to-r from-red-600 to-red-800 rounded-2xl p-4 text-center relative overflow-hidden group">
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                <div class="flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-youtube text-2xl"></i>
+                    <span class="text-xl font-bold">قناتي على يوتيوب</span>
+                </div>
+            </a>
+
+            <!-- زر انستغرام -->
+            <a href="https://www.instagram.com/omar_games_pro_maroc?igsh=MTJrb3E3NG1jYjh4ZQ==" target="_blank" rel="noopener noreferrer" 
+               class="link-card block w-full bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] rounded-2xl p-4 text-center relative overflow-hidden group">
+                <div class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                <div class="flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-instagram text-2xl"></i>
+                    <span class="text-xl font-bold">حسابي على انستغرام</span>
+                </div>
+            </a>
+
+            <!-- زر تيليجرام -->
+            <a href="https://t.me/omarNews6" target="_blank" rel="noopener noreferrer" 
+               class="link-card block w-full bg-gradient-to-r from-[#1c92d2] to-[#f2fcfe] text-gray-900 rounded-2xl p-4 text-center relative overflow-hidden group">
+                <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-5 transition-opacity"></div>
+                <div class="flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-telegram text-2xl text-[#0088cc]"></i>
+                    <span class="text-xl font-bold">قناتي على تيليجرام</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- قسم الألعاب -->
+        <div class="w-full mb-8">
+            <h2 class="text-xl font-bold text-white mb-4 border-b-2 border-accent pb-2 inline-block">
+                <i class="fa-solid fa-gamepad mr-2 text-accent"></i>
+                الألعاب المتاحة للتحميل
+            </h2>
+            
+            <!-- توقيت تنزيل الألعاب -->
+            <div class="bg-black/40 rounded-lg py-2 px-3 border border-accent/40 block shadow-inner text-center mb-4">
+                <p class="text-accent font-bold text-sm tracking-wide">
+                    <i class="fa-solid fa-moon mr-1 text-yellow-400"></i>
+                    توقيت تنزيل الألعاب : دائماً وراء الفطور (فقط في رمضان) 
+                </p>
+            </div>
+
+            <!-- كرت اللعبة 1: جي تي اي مغربية -->
+            <div class="game-card rounded-2xl p-5 relative overflow-hidden">
+                <!-- شريط "جديد" -->
+                <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-1 rounded-bl-lg">حصري</div>
+                
+                <h3 class="text-xl font-bold mb-1 text-white">جي تي اي مغربية</h3>
+                <p class="text-sm text-gray-300 mb-4">أدخل كود التحميل السري الذي وضعته في الفيديو لفتح الرابط.</p>
+                
+                <!-- زر مشاهدة الإعلان للحصول على الكود -->
+                <button onclick="simulateAd()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-all flex justify-center items-center gap-2 mb-5 text-sm shadow-[0_4px_10px_rgba(37,99,235,0.3)] border border-blue-500/50">
+                    <i class="fa-solid fa-play-circle text-lg"></i>
+                    شاهد إعلان للحصول على الكود
+                </button>
+
+                <div class="flex flex-col gap-2 relative z-10">
+                    <div class="relative">
+                        <input type="text" id="gta-code" placeholder="أدخل كود التحميل هنا..." class="w-full bg-black/60 border border-gray-600 rounded-lg p-3 text-white focus:outline-none focus:border-accent text-center font-bold tracking-widest placeholder-gray-500" dir="ltr">
+                    </div>
+                    <!-- رسالة الخطأ -->
+                    <p id="gta-code-error" class="text-red-400 text-xs font-bold text-center hidden mt-1 bg-red-900/40 py-1 rounded">
+                        <i class="fa-solid fa-circle-exclamation mr-1"></i> الكود خاطئ، يرجى التأكد من المقطع!
+                    </p>
+                    <button onclick="checkAndDownload('gta-code', 'RAMADHANV2', 'https://www.mediafire.com/file/bkmf10v63kfk23v/%F0%9D%97%95%F0%9D%9F%B5%F0%9D%97%9B+%F0%9D%97%9A%F0%9D%97%94%F0%9D%97%A0%F0%9D%97%98+%F0%9F%87%B2%F0%9F%87%A6+v2+BY+B9H.apk/file')" class="w-full bg-gradient-to-r from-accent to-red-700 hover:from-red-600 hover:to-red-800 text-white font-bold py-3 px-4 rounded-lg transition-all flex justify-center items-center gap-2 mt-2 shadow-[0_4px_15px_rgba(233,69,96,0.4)] hover:shadow-[0_4px_20px_rgba(233,69,96,0.6)]">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        فتح رابط التحميل
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- مساحة إعلانية سفلية (Ad Banner) -->
+        <div class="w-full bg-black/30 border border-gray-600 border-dashed rounded-lg p-3 text-center shadow-inner flex flex-col justify-center items-center min-h-[60px]">
+            <span class="text-gray-400 text-xs mb-1">إعلان</span>
+            <!-- هنا يمكنك وضع كود إعلانات جوجل لاحقاً -->
+            <p class="text-gray-500 font-semibold text-sm">مساحة مخصصة للإعلانات (AdSense)</p>
+        </div>
+
+    </main>
+
+    <!-- الفوتر (أسفل الصفحة) -->
+    <footer class="w-full text-center py-6 glass-panel mt-auto">
+        <p class="text-sm text-gray-400 font-semibold">
+            جميع الحقوق والطبع والنشر محفوظة <span class="text-accent">2026 &copy;</span>
+        </p>
+    </footer>
+
+    <!-- نافذة منبثقة (Modal) لمحاكاة الإعلان وعرض الكود -->
+    <div id="ad-modal" class="fixed inset-0 bg-black/80 z-50 hidden flex justify-center items-center px-4 backdrop-blur-sm">
+        <div class="bg-secondary border border-accent/30 rounded-2xl p-6 max-w-sm w-full text-center shadow-[0_0_30px_rgba(0,0,0,0.8)] relative">
+            <button onclick="closeAdModal()" class="absolute top-3 right-3 text-gray-400 hover:text-white">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            
+            <!-- مرحلة المشاهدة (الإعلان) -->
+            <div id="ad-playing-state">
+                <i class="fa-solid fa-spinner fa-spin text-5xl text-blue-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2 text-white">جاري عرض الإعلان...</h3>
+                <p class="text-gray-400 text-sm mb-4">يرجى الانتظار بضع ثوانٍ للحصول على الكود.</p>
+                <div class="w-full bg-gray-800 rounded-full h-3 mb-2 border border-gray-600">
+                    <div id="ad-progress" class="bg-blue-500 h-3 rounded-full transition-all duration-1000 ease-linear shadow-[0_0_10px_rgba(59,130,246,0.5)]" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <!-- مرحلة عرض الكود (النتيجة) -->
+            <div id="ad-finished-state" class="hidden">
+                <i class="fa-solid fa-circle-check text-6xl text-green-500 mb-4 drop-shadow-[0_0_10px_rgba(34,197,94,0.5)]"></i>
+                <h3 class="text-2xl font-bold mb-2 text-white">إليك الكود!</h3>
+                
+                <div class="bg-black/60 border-2 border-green-500 rounded-lg p-3 my-4">
+                    <span class="text-2xl font-black text-green-400 tracking-widest block" id="the-code-text">RAMADHANV2</span>
+                </div>
+                
+                <!-- الملاحظة الهامة التي طلبتها -->
+                <div class="bg-red-900/40 border border-red-500/50 rounded-lg p-3 text-sm text-red-200 mb-4 text-right shadow-inner">
+                    <p class="font-bold text-red-400 mb-1 border-b border-red-500/30 pb-1">
+                        <i class="fa-solid fa-triangle-exclamation text-yellow-500 mr-1"></i> تنبيه هام جداً:
+                    </p>
+                    <p class="mt-1 leading-relaxed">يرجى حفظ هذا الكود جيداً! حتى عندما تقوم بتحميل التطبيق وتثبيته على هاتفك، <strong>ستحتاج إلى إدخال نفس الكود (<span class="text-white font-bold">RAMADHANV2</span>)</strong> لكي تفتح معك اللعبة.</p>
+                </div>
+
+                <button onclick="copyCodeAndClose()" class="w-full bg-gradient-to-r from-green-600 to-green-800 hover:from-green-500 hover:to-green-700 text-white font-bold py-3 px-4 rounded-lg transition-all flex justify-center items-center gap-2 shadow-[0_4px_15px_rgba(34,197,94,0.4)]">
+                    <i class="fa-solid fa-copy"></i>
+                    نسخ الكود واستخدامه
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- سكربت فحص الكود والاعلانات -->
+    <script>
+        // دوال الإعلان
+        function simulateAd() {
+            const modal = document.getElementById('ad-modal');
+            const playingState = document.getElementById('ad-playing-state');
+            const finishedState = document.getElementById('ad-finished-state');
+            const progressBar = document.getElementById('ad-progress');
+            
+            // إعادة ضبط الحالة
+            playingState.classList.remove('hidden');
+            finishedState.classList.add('hidden');
+            progressBar.style.width = '0%';
+            modal.classList.remove('hidden');
+
+            // محاكاة تقدم الإعلان (5 ثواني)
+            let progress = 0;
+            const interval = setInterval(() => {
+                progress += 20;
+                progressBar.style.width = progress + '%';
+                
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        playingState.classList.add('hidden');
+                        finishedState.classList.remove('hidden');
+                    }, 500);
+                }
+            }, 1000);
+        }
+
+        function closeAdModal() {
+            document.getElementById('ad-modal').classList.add('hidden');
+        }
+
+        function copyCodeAndClose() {
+            const codeText = "RAMADHANV2";
+            try {
+                // محاولة نسخ الكود للحافظة
+                document.execCommand('copy');
+            } catch (err) {}
+            
+            // وضع الكود تلقائياً في حقل الإدخال لتسهيل الأمر
+            const inputElement = document.getElementById('gta-code');
+            inputElement.value = codeText;
+            
+            // إغلاق النافذة
+            closeAdModal();
+            
+            // تمييز الحقل باللون الأخضر لثانية ليعرف أنه تم اللصق
+            inputElement.classList.add('border-green-500');
+            setTimeout(() => {
+                inputElement.classList.remove('border-green-500');
+            }, 1500);
+        }
+
+        function checkAndDownload(inputId, correctCode, downloadLink) {
+            // الحصول على القيمة المدخلة وتحويلها لأحرف كبيرة لتجنب أخطاء حالة الأحرف وإزالة الفراغات
+            const inputElement = document.getElementById(inputId);
+            const userInput = inputElement.value.trim().toUpperCase();
+            const errorElement = document.getElementById(inputId + '-error');
+
+            if (userInput === correctCode) {
+                // الكود صحيح: إخفاء رسالة الخطأ، تفريغ الحقل، وفتح الرابط في صفحة جديدة
+                errorElement.classList.add('hidden');
+                inputElement.classList.remove('border-red-500');
+                inputElement.classList.add('border-green-500');
+                
+                // فتح رابط التحميل
+                window.open(downloadLink, '_blank');
+            } else {
+                // الكود خاطئ: إظهار رسالة الخطأ وتلوين الحقل بالأحمر
+                errorElement.classList.remove('hidden');
+                inputElement.classList.add('border-red-500');
+                inputElement.classList.remove('border-green-500');
+            }
+        }
+    </script>
+</body>
+</html>
