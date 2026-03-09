@@ -170,7 +170,7 @@
             </div>
 
             <!-- كرت اللعبة 2: اللعبة الجديدة -->
-            <div class="game-card rounded-2xl p-5 relative overflow-hidden">
+            <div class="game-card rounded-2xl p-5 relative overflow-hidden mb-4">
                 <div class="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">جديد</div>
                 <h3 class="text-xl font-bold mb-1 text-white">اللعبة الجديدة</h3>
                 <p class="text-sm text-gray-300 mb-4">أدخل كود التحميل السري الذي وضعته في الفيديو لفتح الرابط.</p>
@@ -188,6 +188,81 @@
                         <i class="fa-solid fa-circle-exclamation mr-1"></i> الكود خاطئ، يرجى التأكد من المقطع!
                     </p>
                     <button onclick="checkAndDownload('game2-code', 'RAMADAMOBARAK', 'https://www.mediafire.com/file/tfyvk80wf3cdgf3/MediaFire_-_Getting_Started.pdf/file')" class="w-full bg-gradient-to-r from-accent to-red-700 hover:from-red-600 hover:to-red-800 text-white font-bold py-3 px-4 rounded-lg transition-all flex justify-center items-center gap-2 mt-2 shadow-[0_4px_15px_rgba(233,69,96,0.4)] hover:shadow-[0_4px_20px_rgba(233,69,96,0.6)]">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        فتح رابط التحميل
+                    </button>
+                </div>
+            </div>
+
+            <!-- كرت اللعبة 3: لعبة زلمي -->
+            <div class="game-card rounded-2xl p-5 relative overflow-hidden mb-4">
+                <div class="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg">مطلوبة</div>
+                <h3 class="text-xl font-bold mb-1 text-white">لعبة زلمي (يغرس قيم الزلومية)</h3>
+                <p class="text-sm text-gray-300 mb-4">أدخل كود التحميل السري الذي وضعته في الفيديو لفتح الرابط.</p>
+                
+                <button onclick="simulateAd('yabaniii', 'zalmi-code')" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-all flex justify-center items-center gap-2 mb-5 text-sm shadow-[0_4px_10px_rgba(37,99,235,0.3)] border border-blue-500/50">
+                    <i class="fa-solid fa-play-circle text-lg"></i>
+                    شاهد إعلان للحصول على الكود
+                </button>
+
+                <div class="flex flex-col gap-2 relative z-10">
+                    <div class="relative">
+                        <input type="text" id="zalmi-code" placeholder="أدخل كود التحميل هنا..." class="w-full bg-black/60 border border-gray-600 rounded-lg p-3 text-white focus:outline-none focus:border-accent text-center font-bold tracking-widest placeholder-gray-500" dir="ltr">
+                    </div>
+                    <p id="zalmi-code-error" class="text-red-400 text-xs font-bold text-center hidden mt-1 bg-red-900/40 py-1 rounded">
+                        <i class="fa-solid fa-circle-exclamation mr-1"></i> الكود خاطئ، يرجى التأكد من المقطع!
+                    </p>
+                    <button onclick="checkAndDownload('zalmi-code', 'yabaniii', 'https://www.mediafire.com/file/1pu1oww8u3ty3hm/%2528_%25D9%2584%25D9%2584%25D8%25AC%25D9%2588%25D8%25A7%25D9%2584_%2529_%25D8%25B2%25D9%2584%25D9%2585%25D9%258A_%25D9%258A%25D8%25BA%25D8%25B1%25D8%25B3_%25D9%2582%25D9%258A%25D9%2585_%25D8%25A7%25D9%2584%25D8%25B2%25D9%2584%25D9%2588%25D9%2585%25D9%258A%25D8%25A9.rar/file')" class="w-full bg-gradient-to-r from-accent to-red-700 hover:from-red-600 hover:to-red-800 text-white font-bold py-3 px-4 rounded-lg transition-all flex justify-center items-center gap-2 mt-2 shadow-[0_4px_15px_rgba(233,69,96,0.4)] hover:shadow-[0_4px_20px_rgba(233,69,96,0.6)]">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        فتح رابط التحميل
+                    </button>
+                </div>
+            </div>
+
+            <!-- كرت اللعبة 4: لعبة أبو فلة رعب -->
+            <div class="game-card rounded-2xl p-5 relative overflow-hidden mb-4">
+                <div class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">رعب</div>
+                <h3 class="text-xl font-bold mb-1 text-white">لعبة أبو فلة رعب</h3>
+                <p class="text-sm text-gray-300 mb-4">أدخل كود التحميل السري الذي وضعته في الفيديو لفتح الرابط.</p>
+                
+                <button onclick="simulateAd('aboufalah4', 'abofalah-code')" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-all flex justify-center items-center gap-2 mb-5 text-sm shadow-[0_4px_10px_rgba(37,99,235,0.3)] border border-blue-500/50">
+                    <i class="fa-solid fa-play-circle text-lg"></i>
+                    شاهد إعلان للحصول على الكود
+                </button>
+
+                <div class="flex flex-col gap-2 relative z-10">
+                    <div class="relative">
+                        <input type="text" id="abofalah-code" placeholder="أدخل كود التحميل هنا..." class="w-full bg-black/60 border border-gray-600 rounded-lg p-3 text-white focus:outline-none focus:border-accent text-center font-bold tracking-widest placeholder-gray-500" dir="ltr">
+                    </div>
+                    <p id="abofalah-code-error" class="text-red-400 text-xs font-bold text-center hidden mt-1 bg-red-900/40 py-1 rounded">
+                        <i class="fa-solid fa-circle-exclamation mr-1"></i> الكود خاطئ، يرجى التأكد من المقطع!
+                    </p>
+                    <button onclick="checkAndDownload('abofalah-code', 'aboufalah4', 'https://www.mediafire.com/file/zoedcbxi9xwqgg8/AboFalah_Horror_-_Android.apk/file')" class="w-full bg-gradient-to-r from-accent to-red-700 hover:from-red-600 hover:to-red-800 text-white font-bold py-3 px-4 rounded-lg transition-all flex justify-center items-center gap-2 mt-2 shadow-[0_4px_15px_rgba(233,69,96,0.4)] hover:shadow-[0_4px_20px_rgba(233,69,96,0.6)]">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        فتح رابط التحميل
+                    </button>
+                </div>
+            </div>
+
+            <!-- كرت اللعبة 5: Granny 4 -->
+            <div class="game-card rounded-2xl p-5 relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-gray-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">تحديث</div>
+                <h3 class="text-xl font-bold mb-1 text-white">Granny 4</h3>
+                <p class="text-sm text-gray-300 mb-4">أدخل كود التحميل السري الذي وضعته في الفيديو لفتح الرابط.</p>
+                
+                <button onclick="simulateAd('grannny 1232S v4', 'granny-code')" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-all flex justify-center items-center gap-2 mb-5 text-sm shadow-[0_4px_10px_rgba(37,99,235,0.3)] border border-blue-500/50">
+                    <i class="fa-solid fa-play-circle text-lg"></i>
+                    شاهد إعلان للحصول على الكود
+                </button>
+
+                <div class="flex flex-col gap-2 relative z-10">
+                    <div class="relative">
+                        <input type="text" id="granny-code" placeholder="أدخل كود التحميل هنا..." class="w-full bg-black/60 border border-gray-600 rounded-lg p-3 text-white focus:outline-none focus:border-accent text-center font-bold tracking-widest placeholder-gray-500" dir="ltr">
+                    </div>
+                    <p id="granny-code-error" class="text-red-400 text-xs font-bold text-center hidden mt-1 bg-red-900/40 py-1 rounded">
+                        <i class="fa-solid fa-circle-exclamation mr-1"></i> الكود خاطئ، يرجى التأكد من المقطع!
+                    </p>
+                    <button onclick="checkAndDownload('granny-code', 'grannny 1232S v4', 'https://www.mediafire.com/file/bkdw4lgj22hzhzg/granny-4-mortuary-madness_v1.0.6_apkvision.apk/file')" class="w-full bg-gradient-to-r from-accent to-red-700 hover:from-red-600 hover:to-red-800 text-white font-bold py-3 px-4 rounded-lg transition-all flex justify-center items-center gap-2 mt-2 shadow-[0_4px_15px_rgba(233,69,96,0.4)] hover:shadow-[0_4px_20px_rgba(233,69,96,0.6)]">
                         <i class="fa-solid fa-unlock-keyhole"></i>
                         فتح رابط التحميل
                     </button>
@@ -445,4 +520,7 @@
         }
     </script>
 </body>
-</html>
+</html> 
+<script src="https://pl28877325.effectivegatecpm.com/71/ae/7a/71ae7afad3ce5fd2a70ab3d8470a9db2.js"></script> 
+<script async="async" data-cfasync="false" src="https://pl28877329.effectivegatecpm.com/283cb114b89efea98d13ffd6b966da69/invoke.js"></script>
+<div id="container-283cb114b89efea98d13ffd6b966da69"></div> 
